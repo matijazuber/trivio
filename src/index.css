@@ -23,20 +23,38 @@ main {
   font-family: Karla;
   font-weight: 700;
   line-height: 100%;
-  font-size: 31.25px;
+  font-size: 32px;
   color: #293264;
 }
 
 .homepage-paragraph {
+  font-size: 16px;
+  margin-top: 20px;
   font-family: Karla;
   letter-spacing: -4%;
   width: 100%;
 }
 
 .homepage-button {
+  margin-top: 20px;
+  font-family: Karla;
+  font-weight: 500;
+  font-size: 16px;
   display: inline-block;
-  padding: 20px 40px;
+  padding: 15px 30px;
   border-radius: 30px;
   border-style: none;
   background-color: #293264;
+  color: white;
+  cursor: pointer;
+  box-shadow: 4px 4px 16px 0px rgba(166, 173, 186, 0.34);
+  outline: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.homepage-button:active {
+  background-color: #354183;
+  transform: scale(0.95);
 }
