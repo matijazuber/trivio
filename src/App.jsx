@@ -1,5 +1,5 @@
 import Homepage from "./componentsKwiz/homepage";
-import QuizTime from "./componentsKwiz/quizTime";
+import QuizTime from "./componentsKwiz/main";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/quizTime" element={<QuizTime />} />
+        <Route path="/main" element={<QuizTime />} />
       </Routes>
     </>
   );

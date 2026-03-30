@@ -4,13 +4,13 @@ const Homepage = () => {
   const navigate = useNavigate();
 
   const goToNextPage = () => {
-    navigate("/quizTime");
+    navigate("/main");
   };
 
   return (
     <>
       <main>
-        <div className="name">Kwiz</div>
+        <div className="name">Trivio</div>
         <p className="homepage-paragraph">
           Think you know it all? Put your knowledge to the test across
           categories like science, history, pop culture, and more.{" "}
