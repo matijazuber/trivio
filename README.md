@@ -1,16 +1,47 @@
-# React + Vite
+# Trivio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based trivia quiz app powered by the [Open Trivia Database](https://opentdb.com/) API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fetches multiple-choice trivia questions in real time
+- Medium difficulty questions with randomized answer order
+- Clean, decoded HTML entities using `he`
+- Environment-based API configuration with Vite
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Open Trivia DB API
+- he (HTML entity decoder)
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/kwiz.git
+   cd kwiz
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the project root:
+
+   ```
+   VITE_API_URL=https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple
+   ```
+
+4. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+
+## License
+
+MIT
