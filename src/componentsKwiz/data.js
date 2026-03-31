@@ -1,6 +1,6 @@
 import he from "he";
 
-export default async function getData() {
+const getData = async () => {
   try {
     const response = await fetch(import.meta.env.VITE_API_URL);
     if (!response.ok) {
@@ -21,6 +21,7 @@ export default async function getData() {
     }));
   } catch (error) {
     console.error(error.message);
-    return [];
   }
-}
+};
+
+export default getData;
