@@ -3,11 +3,11 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  min-width: 550px;
+  min-width: 800px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #faf9f6;
-  padding: 80px;
+  padding: 45px;
   border-radius: 30px;
   box-shadow: 4px 4px 16px 0px rgba(166, 173, 186, 0.64);
 }
@@ -18,4 +18,39 @@
   color: #293264;
   font-family: Karla;
   font-weight: 700;
+}
+
+.answers {
+  background-color: #4d5b9e;
+  font-family: Karla;
+  color: #f5f7fb;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.options-div {
+  display: flex;
+}
+
+.options-div button {
+  color: #293264;
+  font-family: Karla;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 7px 15px 7px 15px;
+  border-width: 0.8px;
+  margin: 0px 15px 0px 15px;
+}
+
+.options {
+  color: #293264;
+  font-family: Karla;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 7px 15px 7px 15px;
+  border-width: 0.8px;
+  margin: 0px 30px 0px 30px;
 }

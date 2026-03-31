@@ -14,11 +14,21 @@ const QuizTime = () => {
   return (
     <main className="mainLayout">
       {question.map((q, idx) => (
-        <p className="questions" key={idx}>
-          {q.question}
-        </p>
+        <>
+          <p className="questions" key={idx}>
+            {q.question}
+          </p>
+          <div className="options-div">
+            <button key={idx}>{q.correct_answer}</button>
+            {q.incorrect_answers.map((ans, i) => (
+              <button className="options" key={i}>
+                {ans}
+              </button>
+            ))}
+          </div>
+        </>
       ))}
-      <button>Check answers</button>
+      <button className="answers">Check answers</button>
     </main>
   );
 };
