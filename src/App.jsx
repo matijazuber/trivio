@@ -1,5 +1,5 @@
-import Homepage from "./componentsKwiz/homepage";
-import QuizTime from "./componentsKwiz/main";
+import Homepage from "./components-trivio/homepage";
+import QuizTime from "./components-trivio/main";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
