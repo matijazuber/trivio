@@ -58,3 +58,22 @@ main {
   background-color: #354183;
   transform: scale(0.95);
 }
+
+.options:hover {
+  border-color: #4a90d9;
+  background: #eef4fb;
+}
+
+.options.selected {
+  border-color: #4a90d9;
+  background: #4a90d9;
+  color: white;
+}
+
+.score {
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: Karla;
+  letter-spacing: -4%;
+  width: 100%;
+}
